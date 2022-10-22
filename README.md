@@ -1,2 +1,3 @@
 # Calculator
-Calculadora Console com as quatro operações básicas.
+
+A Simple Console Calculator application written in C#.
