@@ -20,8 +20,17 @@ namespace Calculator
       System.Console.WriteLine("2 - Subtrair");
       System.Console.WriteLine("3 - Multiplicar");
       System.Console.WriteLine("4 - Dividir");
-      System.Console.Write("Selecione uma opção:");
+      System.Console.Write("Selecione uma opção: ");
       opcao = short.Parse(Console.ReadLine());
+
+      switch (opcao)
+      {
+        case 1: Somar(); break;
+        case 2: Subtrair(); break;
+        case 3: Multiplicar(); break;
+        case 4: Dividir(); break;
+        default: Menu(); break;
+      }
     }
 
     static void Somar()
@@ -43,6 +52,8 @@ namespace Calculator
       Console.WriteLine($"Resultado: {resultado}");
 
       Console.ReadKey();
+
+      Menu();
     }
 
     static void Subtrair()
@@ -64,6 +75,8 @@ namespace Calculator
       Console.WriteLine($"Resultado: {resultado}");
 
       Console.ReadKey();
+
+      Menu();
     }
 
     static void Multiplicar()
@@ -85,6 +98,8 @@ namespace Calculator
       Console.WriteLine($"Resultado: {resultado}");
 
       Console.ReadKey();
+
+      Menu();
     }
 
     static void Dividir()
@@ -106,6 +121,8 @@ namespace Calculator
       Console.WriteLine($"Resultado: {resultado}");
 
       Console.ReadKey();
+
+      Menu();
     }
 
   }
