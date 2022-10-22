@@ -6,6 +6,11 @@ namespace Calculator
   {
     public static void Main(string[] args)
     {
+      Somar();
+    }
+
+    static void Somar()
+    {
       float primeiroValor = 0.0f;
       float segundoValor = 0.0f;
       float resultado = 0.0f;
