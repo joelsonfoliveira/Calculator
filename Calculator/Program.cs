@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Calculator
+﻿namespace Calculator
 {
   class Program
   {
@@ -20,6 +18,7 @@ namespace Calculator
       System.Console.WriteLine("2 - Subtrair");
       System.Console.WriteLine("3 - Multiplicar");
       System.Console.WriteLine("4 - Dividir");
+      System.Console.WriteLine("5 - Sair");
       System.Console.Write("Selecione uma opção: ");
       opcao = short.Parse(Console.ReadLine());
 
@@ -29,6 +28,7 @@ namespace Calculator
         case 2: Subtrair(); break;
         case 3: Multiplicar(); break;
         case 4: Dividir(); break;
+        case 5: System.Environment.Exit(0); break;
         default: Menu(); break;
       }
     }
@@ -42,10 +42,10 @@ namespace Calculator
       Console.Clear();
 
       Console.Write("Entre com o primeiro valor: ");
-      primeiroValor = float.Parse(Console.ReadLine());
+      primeiroValor = float.Parse(System.Console.ReadLine());
 
       Console.Write("Entre com o segundo valor: ");
-      segundoValor = float.Parse(Console.ReadLine());
+      segundoValor = float.Parse(System.Console.ReadLine());
 
       resultado = primeiroValor + segundoValor;
 
@@ -65,10 +65,10 @@ namespace Calculator
       Console.Clear();
 
       Console.Write("Entre com o primeiro valor: ");
-      primeiroValor = float.Parse(Console.ReadLine());
+      primeiroValor = float.Parse(System.Console.ReadLine());
 
       Console.Write("Entre com o segundo valor: ");
-      segundoValor = float.Parse(Console.ReadLine());
+      segundoValor = float.Parse(System.Console.ReadLine());
 
       resultado = primeiroValor - segundoValor;
 
@@ -88,10 +88,10 @@ namespace Calculator
       Console.Clear();
 
       Console.Write("Entre com o primeiro valor: ");
-      primeiroValor = float.Parse(Console.ReadLine());
+      primeiroValor = float.Parse(System.Console.ReadLine());
 
       Console.Write("Entre com o segundo valor: ");
-      segundoValor = float.Parse(Console.ReadLine());
+      segundoValor = float.Parse(System.Console.ReadLine());
 
       resultado = primeiroValor * segundoValor;
 
@@ -111,10 +111,10 @@ namespace Calculator
       Console.Clear();
 
       Console.Write("Entre com o primeiro valor: ");
-      primeiroValor = float.Parse(Console.ReadLine());
+      primeiroValor = float.Parse(System.Console.ReadLine());
 
       Console.Write("Entre com o segundo valor: ");
-      segundoValor = float.Parse(Console.ReadLine());
+      segundoValor = float.Parse(System.Console.ReadLine());
 
       resultado = primeiroValor / segundoValor;
 
